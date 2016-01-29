@@ -15,13 +15,14 @@ body{
 
 }
 
-#buy {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-decoration: underline;
-
+#name1 {
+    /*float: left;*/
+    position: relative;
+    margin: 20px;
+    display: flex;
+    align-items: center;
 }
+
 
 #cart {
     text-align: center;
@@ -61,4 +62,6 @@ body{
     float: right;
     text-align: right;
     margin-left: auto
-}
+}#on{
+    
+ }
