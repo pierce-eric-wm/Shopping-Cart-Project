@@ -49,7 +49,7 @@ body {
 }
 #item1{
     float:left;
-    width:33%;
+    margin:15px;
 }
 
 #item1, img {
@@ -91,7 +91,7 @@ div.desc {
 
 #s1 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -103,7 +103,7 @@ div.desc {
 
 #s2 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -115,7 +115,7 @@ div.desc {
 
 #s3 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -127,7 +127,7 @@ div.desc {
 
 #s4 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -211,7 +211,7 @@ div.desc {
 
 #item2 {
  float:left;
- width:33%;
+ margin:15px;
 
 }
 
@@ -222,7 +222,7 @@ div.desc {
 
 #s5 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -234,7 +234,7 @@ div.desc {
 
 #s6 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -246,7 +246,7 @@ div.desc {
 
 #s7 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -258,7 +258,7 @@ div.desc {
 
 #s8 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -327,7 +327,7 @@ div.desc {
 
 #item3 {
     float:left;
-    width:33%;
+    margin:15px;
 
 }
 
@@ -338,7 +338,7 @@ div.desc {
 
 #s9 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -350,7 +350,7 @@ div.desc {
 
 #s10 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -362,7 +362,7 @@ div.desc {
 
 #s11 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -374,7 +374,7 @@ div.desc {
 
 #s12 {
     padding: 6px;
-    background: #000000;
+    background: darkgreen;
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -437,6 +437,414 @@ div.desc {
     opacity: 1;
 }
 #row1 {
+   width:1150px;
+   height:444px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+
+
+
+
+
+
+
+#item4{
+    float:left;
+    margin:15px;
+}
+
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#slider-wrapper {
+    width: 350px;
+    height: 444px;
+    margin: 50px auto;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#s13 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s14 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s15 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s16 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s13:hover,
+#s14:hover,
+#s15:hover,
+#s16:hover {
+    opacity: .50;
+}
+
+.inner-wrapper {
+    width: 350px;
+    height: 444px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.control {
+    display: none;
+}
+
+#Slide13:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+}
+
+#Slide14:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+}
+
+#Slide15:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+}
+
+#Slide16:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+}
+
+#Slide13:checked + #s1 {
+    opacity: 1;
+}
+
+#Slide14:checked + #s2 {
+    opacity: 1;
+}
+
+#Slide15:checked + #s3 {
+    opacity: 1;
+}
+
+#Slide16:checked + #s4 {
+    opacity: 1;
+}
+
+.overflow-wrapper {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide1 img {
+    width: 25%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+#item5 {
+    float:left;
+    margin:15px;
+
+}
+
+.slide5 img {
+    width: 25%;
+    float: left;
+}
+
+#s17 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s18 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s19 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s20 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s17:hover,
+#s18:hover,
+#s19:hover,
+#s20:hover {
+    opacity: .50;
+}
+
+.inner-wrapper {
+    width: 350px;
+    height: 444px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.control {
+    display: none;
+}
+
+#Slide17:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+}
+
+#Slide18:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+}
+
+#Slide19:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+}
+
+#Slide20:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+}
+
+#Slide16:checked + #s1 {
+    opacity: 1;
+}
+
+#Slide18:checked + #s2 {
+    opacity: 1;
+}
+
+#Slide19:checked + #s3 {
+    opacity: 1;
+}
+
+#Slide20:checked + #s4 {
+    opacity: 1;
+}
+
+
+
+
+
+#item6 {
+    float:left;
+    margin:15px;
+
+}
+
+.slide6 img {
+    width: 25%;
+    float: left;
+}
+
+#s21 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s22 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s23 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s24 {
+    padding: 6px;
+    background: darkgreen;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s21:hover,
+#s22:hover,
+#s23:hover,
+#s24:hover {
+    opacity: .50;
+}
+
+.inner-wrapper {
+    width: 350px;
+    height: 444px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.control {
+    display: none;
+}
+
+#Slide21:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+}
+
+#Slide22:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+}
+
+#Slide23:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+}
+
+#Slide24:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+}
+
+#Slide21:checked + #s1 {
+    opacity: 1;
+}
+
+#Slide22:checked + #s2 {
+    opacity: 1;
+}
+
+#Slide23:checked + #s3 {
+    opacity: 1;
+}
+
+#Slide24:checked + #s4 {
+    opacity: 1;
+}
+#row2 {
+    width:1150px;
+    height:444px;
     margin-left:auto;
     margin-right:auto;
 }
