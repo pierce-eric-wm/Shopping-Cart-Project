@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
 body {
     background-image: url("pictures/back.jpg");
-
+    font-family: 'Comfortaa', bold;
 }
 
 #nav {
@@ -764,7 +766,7 @@ div.desc {
 
 }
 
-.slide7 img {
+.slide6 img {
     width: 25%;
     float: left;
 }
