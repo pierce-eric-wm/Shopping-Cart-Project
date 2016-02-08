@@ -1,4 +1,70 @@
-<!DOCTYPE html>
+<?php
+
+/*** mysql hostname ***/
+$hostname = '127.0.0.1';
+
+/*** mysql username ***/
+$username = 'root';
+
+/*** mysql password ***/
+$password = 'root';
+
+try {
+    $dbh = new PDO('mysql:host=127.0.0.1;dbname=game_on', 'root', 'root');
+
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+if(@$_POST['formSubmit'])
+{    $errorMessage = false;
+
+    if(empty($_POST['firstname']))
+    {
+        $errorMessage = "<li>Enter your first name!</li>";
+    }
+    if(empty($_POST['username']))
+    {
+        $errorMessage = "<li>Enter a username!</li>";
+    }
+    if(empty($_POST['email']))
+    {
+        $errorMessage = "<li>Enter your email!</li>";
+    }
+
+    if(empty($_POST['password']))
+    {
+        $errorMessage = "<li>Enter your password!</li>";
+    }
+
+
+    $stmt = $dbh->prepare("INSERT INTO signup (id, firstname, username, email, password) VALUES (:id, :firstname, :username, :email, :password)");
+
+    $result = $stmt->execute(
+        array(
+            'id' => NULL,
+            'firstname' => $_POST['firstname'],
+            'username' => $_POST['username'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password']
+        )
+    );
+
+    if(!$result){
+
+    }
+    {
+        echo("<p>There was an error with your form:</p>\n");
+        echo("<ul>" . $errorMessage . "</ul>\n");
+    }
+
+}
+?>
+
+
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
