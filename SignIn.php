@@ -57,59 +57,38 @@ if(@$_POST['login']) {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-alphanumeric/069096-black-paint-splatter-icon-alphanumeric-letter-rr.png">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title> Sign-In </title>
-</head>
-<body>
-<div id="nav">
-    <div id="rentapet">
-        <p>Rent-A-Pet - Sign In </p>
-    </div>
-    <table id="nava">
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheet.css">
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 
-        <tr>
-            <div id="home"><td><a href="index.php">Home</a></td></div>
-            <div id="bag"><td><a href="payment.php"><img src="Pictures/bagz.png" ></a></td></div>
-            <div id="SignIn"><td><a href="signin.php">Sign In</a></td></div>
-        </tr>
-    </table>
-</div>
-<center>
-    <div id="filler7"></div>
-    <form method="POST">
-        <h2>Sign - In</h2>
-        <label>Username :</label>
-        <input type="text" name="username" id="name" required> <br><br>
-        <label> Password :</label>
-        <input type="text" name="password" id="passsword" required> <br><br>
-        <button type="submit" name="login" value="1">Sign In</button>
-        <?php
-        if(isset($_SESSION['registered'])){
-            echo '<p id="registered">Successfully Registered</p>';
-            unset($_SESSION['registered']);
-        }
-        ?>
-        <?php
-        if($error){
-            echo $error;
-            echo '<br>';
-        }
-        if($success){
-            echo $success;
-            echo '<br>';
-        }
-        ?>
-    </form>
-    <div>
-        <a href="SignUp.php">
-            <button>Sign Up</button>
-        </a>
+
+</head>
+
+<div id="nav">
+    <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
+    <div id="n4me">
+        <h2>Home</h2>
     </div>
-</body>
+    <div class="right">
+        <a href="SignUp.php"> <p id="su">Sign up</p></a>
+        <a href="SignIn.php"><p id="si">Sign in</p></a>
+        <div style="clear: both;"></div>
+    </div>
+
+</div>
+<h2>Sign - In</h2>
+<label>Username :</label>
+<input type="text" name="ddusername" id="name"> <br><br>
+<label> Password :</label>
+<input type="text" name="ddpassword" id="passsword"> <br><br>
+<input type="button" name="signin" id="signin" value="Sign-In">
+</form>
+<div id="buttonsu">
+    <a href="SignUp.php">
+        <button>Sign Up</button>
+    </a>
+</div>
 </html>

@@ -75,13 +75,13 @@ if(@$_POST['formSubmit'])
 </head>
 <body>
 <div id="nav">
-    <div id="name1"><a href="index.html"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
+    <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
     <div id="n4me">
         <h1>Sign up</h1>
     </div>
     <div class="right">
-        <a href="signUp.html"><p id="su">Sign up</p></a>
-        <a href="signIn.html"><p id="si">Sign in</p></a>
+        <a href="SignUp.php"><p id="su">Sign up</p></a>
+        <a href="SignIn.php"><p id="si">Sign in</p></a>
         <div style="clear: both;"></div>
     </div>
 
