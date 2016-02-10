@@ -88,22 +88,23 @@ if(@$_POST['formSubmit'])
 </div>
 <div id="form">
     <center>
-        <form>
+        <form method="post">
             <h2 id="signsup">Register for Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n </h2>
             <label>Name :</label>
-            <input type="text" name="dname" id="name"> <br><br>
+            <input type="text" name="firstname" id="name"> <br><br>
             <label>Email :</label>
-            <input type="text" name="demail" id="email"> <br><br>
+            <input type="text" name="email" id="email"> <br><br>
             <label> Username : </label>
-            <input type="text" name="dusername" id="username"> <br><br>
+            <input type="text" name="username" id="username"> <br><br>
             <label>Password :</label>
             <input type="password" name="password" id="password"><br><br>
 
 
             <br>
-            <input type="button" name="register" id="register" value="Register">
+            <button type="submit" name="formSubmit" value="1">Register</button>
 
         </form>
+        
 
 
 

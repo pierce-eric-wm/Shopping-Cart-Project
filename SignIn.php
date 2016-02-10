@@ -79,7 +79,8 @@ if(@$_POST['login']) {
     </div>
 
 </div>
-<h2>Sign - In</h2>
+<div id="SignInto">
+<h2 id="h2o">Sign - In</h2>
 <label>Username :</label>
 <input type="text" name="ddusername" id="name"> <br><br>
 <label> Password :</label>
@@ -90,5 +91,6 @@ if(@$_POST['login']) {
     <a href="SignUp.php">
         <button>Sign Up</button>
     </a>
+</div>
 </div>
 </html>
