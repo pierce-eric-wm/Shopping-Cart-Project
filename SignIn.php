@@ -24,7 +24,7 @@ $registered = $_SESSION["registered"];
 //$username = $_SESSION["username"];
 
 if(isset($_SESSION['username'])){
-    header('location: index.php');
+   //header('location: index.php');
 }
 
 $error = false;
@@ -70,7 +70,7 @@ if(@$_POST['login']) {
 <div id="nav">
     <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
     <div id="n4me">
-        <h2>Home</h2>
+        <h2>Sign In</h2>
     </div>
     <div class="right">
         <a href="SignUp.php"> <p id="su">Sign up</p></a>
@@ -80,12 +80,13 @@ if(@$_POST['login']) {
 
 </div>
 <div id="SignInto">
+    <form method="post">
 <h2 id="h2o">Sign - In</h2>
 <label>Username :</label>
-<input type="text" name="ddusername" id="name"> <br><br>
+<input type="text" name="username" id="name"> <br><br>
 <label> Password :</label>
-<input type="text" name="ddpassword" id="passsword"> <br><br>
-<input type="button" name="signin" id="signin" value="Sign-In">
+<input type="password" name="password" id="passsword"> <br><br>
+        <button type="submit" name="login" value="1">Sign In</button>
 </form>
 <div id="buttonsu">
     <a href="SignUp.php">

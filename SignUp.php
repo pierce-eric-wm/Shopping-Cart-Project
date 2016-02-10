@@ -16,8 +16,8 @@ try {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
-if(@$_POST['formSubmit'])
-{    $errorMessage = false;
+if(@$_POST['formSubmit']) {
+        $errorMessage = false;
 
     if(empty($_POST['firstname']))
     {
@@ -38,22 +38,25 @@ if(@$_POST['formSubmit'])
     }
 
 
-    $stmt = $dbh->prepare("INSERT INTO signup (id, firstname, username, email, password) VALUES (:id, :firstname, :username, :email, :password)");
+    if(!$errorMessage) {
+        $stmt = $dbh->prepare("INSERT INTO signup (firstname, username, email, password) VALUES (:firstname, :username, :email, :password)");
 
-    $result = $stmt->execute(
-        array(
-            'id' => NULL,
+        $result = $stmt->execute(
+            array(
+                'firstname' => $_POST['firstname'],
+                'username' => $_POST['username'],
+                'email' => $_POST['email'],
+                'password' => $_POST['password']
+            )
+        );
+
+        print_r(array(
             'firstname' => $_POST['firstname'],
             'username' => $_POST['username'],
             'email' => $_POST['email'],
             'password' => $_POST['password']
-        )
-    );
-
-    if(!$result){
-
-    }
-    {
+        ));
+    }else{
         echo("<p>There was an error with your form:</p>\n");
         echo("<ul>" . $errorMessage . "</ul>\n");
     }
@@ -86,7 +89,7 @@ if(@$_POST['formSubmit'])
     </div>
 
 </div>
-<div id="form">
+<div id="formSubmit">
     <center>
         <form method="post">
             <h2 id="signsup">Register for Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n </h2>
@@ -104,7 +107,7 @@ if(@$_POST['formSubmit'])
             <button type="submit" name="formSubmit" value="1">Register</button>
 
         </form>
-        
+    <center>
 
 
 

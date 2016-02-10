@@ -50,7 +50,6 @@ foreach($dbh->query($sql) as $row){
     </div>
 
 </div>
-
 <div id="row1">
     <div id="wrapper">
         <div id="first">
