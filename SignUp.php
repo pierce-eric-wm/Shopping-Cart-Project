@@ -85,6 +85,7 @@ if(@$_POST['formSubmit']) {
     <div class="right">
         <a href="SignUp.php"><p id="su">Sign up</p></a>
         <a href="SignIn.php"><p id="si">Sign in</p></a>
+        <a href="cart.php"><p id="ct">Cart</p></a>
         <div style="clear: both;"></div>
     </div>
 
