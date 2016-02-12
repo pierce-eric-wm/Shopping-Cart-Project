@@ -55,8 +55,9 @@ foreach($dbh->query($sql) as $row){
     <div id="wrapper">
         <div id="first">
             <div id="item1">
-                <p>Just Cause 3</p>
-                <p>$60</p>
+                <p class="ptext">Just Cause 3</p>
+                <p class="ptext">$60</p>
+                <p class="pbutton"><button type="submit" name="buyItem1" value="1">Buy</button></p>
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
                         <input checked type="radio" name="slide" class="control" id="Slide1"/>
@@ -79,8 +80,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="second">
                 <div id="item2">
-                    <p>Star Wars: Battle Front 3</p>
-                    <p>$60</p>
+                    <p class="ptext">Star Wars: Battle Front 3</p>
+                    <p class="ptext">$60</p>
+                    <p class="pbutton""><button type="submit" name="buyItem2" value="1">Buy</button></p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide5"/>
@@ -104,8 +106,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="third">
                 <div id="item3">
-                    <p>Middle Earth: Shadow Of Mordor</p>
-                    <p>$20</p>
+                    <p class="ptext">Middle Earth: Shadow Of Mordor</p>
+                    <p class="ptext">$20 </p>
+                        <p class="pbutton""><button type="submit" name="buyItem3" value="1">Buy</button></p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide9"/>
@@ -134,8 +137,9 @@ foreach($dbh->query($sql) as $row){
     <div id="wrapper">
         <div id="first">
             <div id="item4">
-                <p>Dead Pool</p>
-                <p>$30</p>
+                <p class="ptext">Dead Pool</p>
+                <p class="ptext">$30</p>
+                    <p class="pbutton""><button type="submit" name="buyItem4" value="1">Buy</button></p>
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
                         <input checked type="radio" name="slide" class="control" id="Slide13"/>
@@ -158,8 +162,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="second">
                 <div id="item5">
-                    <p> Grand Theft Auto: 5</p>
-                    <p>$60</p>
+                    <p class="ptext"> Grand Theft Auto: 5</p>
+                    <p class="ptext">$60</p>
+                    <p class="pbutton""><button type="submit" name="buyItem5" value="1">Buy</button></p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide17"/>
@@ -183,8 +188,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="third">
                 <div id="item6">
-                    <p>Call Of Duty: Black Ops 3</p>
-                    <p>$60</p>
+                    <p class="ptext">Call Of Duty: Black Ops 3</p>
+                    <p class="ptext">$60</p>
+                    <p class="pbutton""><button type="submit" name="buyItem6" value="1">Buy</button></p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide21"/>
@@ -213,8 +219,9 @@ foreach($dbh->query($sql) as $row){
     <div id="wrapper">
         <div id="first">
             <div id="item7">
-                <p>Fallout 4</p>
-                <p>$60</p>
+                <p class="ptext">Fallout 4</p>
+                <p class="ptext">$60 </p>
+                <p class="pbutton""><button type="submit" name="buyItem7" value="1">Buy</button></p>
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
                         <input checked type="radio" name="slide" class="control" id="Slide25"/>
@@ -237,6 +244,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="second">
                 <div id="item8">
+                    <p class="ptext">Metal Gear Solid 5: The Phantom Pain</p>
+                    <p class="ptext">$40 </p>
+                    <p class="pbutton""><button type="submit" name="buyItem8" value="1">Buy</button></p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide29"/>
@@ -260,6 +270,9 @@ foreach($dbh->query($sql) as $row){
             </div>
             <div id="third">
                 <div id="item9">
+                    <p class="ptext">The Witcher 3: Wild Hunt </p>
+                    <p class="ptext">$50</p>
+                    <p class="pbutton""> <button type="submit" name="buyItem9" value="1">Buy </button> </p>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide33"/>

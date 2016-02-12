@@ -88,10 +88,20 @@ h2 {
     width: 350px;
     height: 444px;
 }
-#item1, p {
+#item1, .ptext {
    text-align: center;
    text-decoration: underline;
    font-size: 20px;
+
+}
+.ptext {
+    -webkit-text-stroke-width: .35px;
+    -webkit-text-stroke-color: white;
+
+}
+.pbutton{
+    text-align: center;
+
 }
 
 div.img {
@@ -250,7 +260,7 @@ div.desc {
  margin:15px;
 
 }
-#item2, p{
+#item2, .ptext{
     text-align: center;
     text-decoration: underline;
     font-size: 20px;
@@ -371,7 +381,7 @@ div.desc {
     margin:15px;
 
 }
-#item3, p {
+#item3, .ptext {
     text-align:center;
     text-decoration: underline;
     font-size:20px;
@@ -1330,13 +1340,14 @@ div.desc {
 
 
 
+button {
+    border 2px solid darkgreen;
+}
+button:active {
+border: 2px solid darkgreen;
+    background-color: darkgreen;
 
-
-
-
-
-
-
+}
 
 
 

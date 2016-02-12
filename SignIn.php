@@ -60,7 +60,7 @@ if(@$_POST['login']) {
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
+    <title>Sign In</title>
     <link rel="stylesheet" type="text/css" media="all" href="stylesheet.css">
     <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 

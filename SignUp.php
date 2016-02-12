@@ -80,7 +80,7 @@ if(@$_POST['formSubmit']) {
 <div id="nav">
     <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
     <div id="n4me">
-        <h1>Sign up</h1>
+        <h1>Sign Up</h1>
     </div>
     <div class="right">
         <a href="SignUp.php"><p id="su">Sign up</p></a>
