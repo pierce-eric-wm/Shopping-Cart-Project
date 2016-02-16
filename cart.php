@@ -17,7 +17,13 @@ catch(PDOException $e)
 {
     echo $e->getMessage();
 }
-session_start();
+session_start()
+
+SELECT * FROM game_on.item {
+
+}
+
+
 
 
 
@@ -41,6 +47,7 @@ session_start();
 
 </head>
 <body>
+
 <div id="nav">
     <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
     <div id="n4me">
@@ -52,5 +59,6 @@ session_start();
         <a href="cart.php"><p id="ct">Cart</p></a>
         <div style="clear: both;"></div>
     </div>
+
 </body>
 </html>
