@@ -68,31 +68,31 @@ session_start()
         </tr>
 
         <tr>
-            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><img id=cause src="pictures/2.jpg"></td>
+            <td><p>Star Wars: Battle Front 3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/3.jpg"></td>
             <td><p>Just Cause:3</p></td>
             <td><p>$60</p></td>
         </tr>
 
         <tr>
-            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><img id=cause src="pictures/4.jpg"></td>
             <td><p>Just Cause:3</p></td>
             <td><p>$60</p></td>
         </tr>
 
         <tr>
-            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><img id=cause src="pictures/5.jpg"></td>
             <td><p>Just Cause:3</p></td>
             <td><p>$60</p></td>
         </tr>
 
         <tr>
-            <td><img id=cause src="pictures/1.jpg"></td>
-            <td><p>Just Cause:3</p></td>
-            <td><p>$60</p></td>
-        </tr>
-
-        <tr>
-            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><img id=cause src="pictures/"></td>
             <td><p>Just Cause:3</p></td>
             <td><p>$60</p></td>
         </tr>
