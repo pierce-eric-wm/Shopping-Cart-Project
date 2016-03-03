@@ -10,22 +10,12 @@ $password = 'root';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=game_on", $username, $password);
-    /*** echo a message saying we have connected ***/
-    echo 'Connected to database';
 }
 catch(PDOException $e)
 {
     echo $e->getMessage();
 }
 session_start()
-
-SELECT * FROM game_on.item {
-
-}
-
-
-
-
 
 
 
@@ -49,7 +39,8 @@ SELECT * FROM game_on.item {
 <body>
 
 <div id="nav">
-    <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a></div>
+    <div id="name1"><a href="index.php"><h1>Game<img id="on" src="pictures/on.png" alt="on" style="width:40px;height:40px;">n</h1></a>
+    </div>
     <div id="n4me">
         <h2>Cart</h2>
     </div>
@@ -57,8 +48,73 @@ SELECT * FROM game_on.item {
         <a href="SignUp.php"> <p id="su">Sign up</p></a>
         <a href="SignIn.php"><p id="si">Sign in</p></a>
         <a href="cart.php"><p id="ct">Cart</p></a>
-        <div style="clear: both;"></div>
-    </div>
+        <div style="clear: both;">
 
+        </div>
+    </div>
+    </div>
+    <br>
+    <div id="cartTable">
+    <table id="table">
+    <tr>
+     <th class="CartTable"><h1>Cover</h1></th>
+     <th class="CartTable"><h1>Title Name</h1></th>
+     <th class="CartTable"><h1>Price</h1></th>
+    </tr>
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+
+        <tr>
+            <td><img id=cause src="pictures/1.jpg"></td>
+            <td><p>Just Cause:3</p></td>
+            <td><p>$60</p></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

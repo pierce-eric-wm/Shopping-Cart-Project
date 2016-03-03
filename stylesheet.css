@@ -512,6 +512,12 @@ div.desc {
     float:left;
     margin:15px;
 }
+#item4, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
 
 .slide4 img {
     width: 25%;
@@ -682,6 +688,13 @@ div.desc {
 
 }
 
+#item5, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
 .slide5 img {
     width: 25%;
     float: left;
@@ -797,7 +810,12 @@ div.desc {
     margin:15px;
 
 }
+#item6, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
 
+}
 .slide6 img {
     width: 25%;
     float: left;
@@ -921,6 +939,12 @@ div.desc {
     margin:15px;
 }
 
+#item7, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
 #item7, img {
     width: 350px;
     height: 444px;
@@ -1084,7 +1108,12 @@ div.desc {
     margin:15px;
 
 }
+#item8, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
 
+}
 .slide8 img {
     width: 25%;
     float: left;
@@ -1200,7 +1229,12 @@ div.desc {
     margin:15px;
 
 }
+#item9, .ptext {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
 
+}
 .slide9 img {
     width: 25%;
     float: left;
@@ -1323,6 +1357,7 @@ div.desc {
 /* ---------------------------------------------*/
 
 
+
 #signsup{
     color:darkgreen;
 }
@@ -1338,20 +1373,51 @@ div.desc {
     color:darkgreen;
 }
 
-
-
-button {
-    border 2px solid darkgreen;
-}
-button:active {
-border: 2px solid darkgreen;
-    background-color: darkgreen;
-
+.word_break {
+    height:50px;
+    width:5px;
+    background-color:black;
+    margin:25px;
 }
 
+#table{
+    float:left;
+    text-align: center;
+    position:relative;
+    font-size:50px;
+    left:35px;
+    width:50%;
 
+}
+#table , th{
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
 
+.block {
+    height:50px;
+    width:5px;
+    background-color:black;
+    position:absolute;
+}
 
+.CartTable{
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
+#Cart1{
+    width:50%;
+    padding:15px;
+}
+#cause, img{
+    width:100px;
+    height:150px;
+}
+#table, p{
+    font-size: 25px;
 
+}
 
 

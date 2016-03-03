@@ -10,23 +10,23 @@ $username = 'root';
 $password = 'root';
 
 session_start();
-include_once("config.php");
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=game_on", $username, $password);
-    /*** echo a message saying we have connected ***/
-    echo 'Connected to database';
+
 }
 catch(PDOException $e)
 {
     echo $e->getMessage();
 }
 
-$sql = "select * from item";
+$sql = "select * from items";
 
 foreach($dbh->query($sql) as $row){
     echo $row['name'];
 }
+
+
 
 ?>
 
@@ -60,6 +60,7 @@ foreach($dbh->query($sql) as $row){
             <div id="item1">
                 <p class="ptext">Just Cause 3</p>
                 <p class="ptext">$60</p>
+                <button id="b1" a href="add_to_cart.php">Add to cart</button>
 
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
@@ -85,6 +86,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item2">
                     <p class="ptext">Star Wars: Battle Front 3</p>
                     <p class="ptext">$60</p>
+                    <button id="b2" a href="add_to_cart.php">Add to cart</button>
 
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
@@ -111,6 +113,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item3">
                     <p class="ptext">Middle Earth: Shadow Of Mordor</p>
                     <p class="ptext">$20 </p>
+                    <button id="b3" a href="add_to_cart.php">Add to cart</button>
 
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
@@ -142,6 +145,7 @@ foreach($dbh->query($sql) as $row){
             <div id="item4">
                 <p class="ptext">Dead Pool</p>
                 <p class="ptext">$30</p>
+                <button  id="b4" a href="add_to_cart.php">Add to cart</button>
 
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
@@ -167,6 +171,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item5">
                     <p class="ptext"> Grand Theft Auto: 5</p>
                     <p class="ptext">$60</p>
+                    <button id="b5" a href="add_to_cart.php">Add to cart</button>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide17"/>
@@ -192,6 +197,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item6">
                     <p class="ptext">Call Of Duty: Black Ops 3</p>
                     <p class="ptext">$60</p>
+                    <button id="b6" a href="add_to_cart.php">Add to cart</button>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide21"/>
@@ -222,6 +228,7 @@ foreach($dbh->query($sql) as $row){
             <div id="item7">
                 <p class="ptext">Fallout 4</p>
                 <p class="ptext">$60 </p>
+                <button id="b7" a href="add_to_cart.php">Add to cart</button>
                 <div id="slider-wrapper">
                     <div class="inner-wrapper">
                         <input checked type="radio" name="slide" class="control" id="Slide25"/>
@@ -246,6 +253,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item8">
                     <p class="ptext">Metal Gear Solid 5: The Phantom Pain</p>
                     <p class="ptext">$40 </p>
+                    <button id="b8" a href="add_to_cart.php">Add to cart</button>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide29"/>
@@ -271,6 +279,7 @@ foreach($dbh->query($sql) as $row){
                 <div id="item9">
                     <p class="ptext">The Witcher 3: Wild Hunt </p>
                     <p class="ptext">$50</p>
+                    <button id="b9" a href="add_to_cart.php">Add to cart</button>
                     <div id="slider-wrapper">
                         <div class="inner-wrapper">
                             <input checked type="radio" name="slide" class="control" id="Slide33"/>

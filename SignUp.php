@@ -56,9 +56,6 @@ if(@$_POST['formSubmit']) {
             'email' => $_POST['email'],
             'password' => $_POST['password']
         ));
-    }else{
-        echo("<p>There was an error with your form:</p>\n");
-        echo("<ul>" . $errorMessage . "</ul>\n");
     }
 
 }
